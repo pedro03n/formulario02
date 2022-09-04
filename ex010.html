@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <script>
+        alert("Vamos calcular o número de lados de um polígono regular e as suas medidas.");
+        var nLados =parseFloat(prompt("Insira o número de lados: "));
+        if(nLados == 3){
+            var a= parseFloat(prompt("Insira o valor de a:"));
+            var b= parseFloat(prompt("Insira o valor de b:"));
+            var c= parseFloat(prompt("Insira o valor de c:"));
+            perimetro= a + b +c;
+            document.write("TRIÂNGULO. ")
+            document.write(" O perimetro do triângulo é "+perimetro+"cm");
+        }else if(nLados == 4){
+            var l=parseFloat(prompt("Insira o valor dos lados: "));
+            var area= l*l;
+            document.write("QUADRADO.")
+            document.write(" A área do quadrado é: "+area+"cm");
+        }else if(nLados ==5){
+            document.write("PENTÁGONO.")
+        }else if(nLados < 3){
+            document.write("NÃO É UM POLÍGONO.")
+        }else{
+            document.write("POLÍGONO NÃO IDENTIFICADO.")
+        }
+    </script>
+</body>
